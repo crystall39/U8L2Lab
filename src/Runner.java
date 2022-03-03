@@ -140,5 +140,36 @@ public class Runner
         String[][] words5 = {{"time"}};
         FunWith2DArrays.fourCorners(words5);
 
+        System.out.println();
+
+        // TEST CODE FOR average
+        int[][] testArr10 = {{1, 2, 3}, {4, 5, 6}};
+        System.out.println(FunWith2DArrays.average(testArr10));
+        int[][] testArr11 = {{1, 2, 3, 4}, {7, 8, 9, 10}};
+        System.out.println(FunWith2DArrays.average(testArr11));
+        int[][] testArr12 = {{4, 5, 2}, {1, 9, 7}, {8, 10, 13}};
+        System.out.println(FunWith2DArrays.average(testArr12));
+        int[][] testArr13 = {{4}, {7}, {8}, {2}};
+        System.out.println(FunWith2DArrays.average(testArr13));
+        int[][] testArr14 = {{4}};
+        System.out.println(FunWith2DArrays.average(testArr14));
+
+        System.out.println();
+
+        // TEST CODE FOR indexFound
+        String[][] words6 = {{"hi", "bye", "stuff", "go"}, {"time", "up", "you", "good"}, {"map", "low", "bow", "mom"}};
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words6, "stuff")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words6, "good")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words6, "map")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words6, "cat")));
+        System.out.println("--------------");
+
+        String[][] words7 = {{"time", "up", "bye"}, {"hi", "hit", "up"}, {"map", "bam", "low"}, {"bow", "mom", "joy"}};
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words7, "time")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words7, "joy")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words7, "bam")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words7, "cat")));
+
+
     }
 }
